@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/moezif-dev/movie-list/issues"
   },
-  "homepage": "https://github.com/moezif-dev/movie-list#readme"
+  "homepage": "https://github.com/moezif-dev/movie-list#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
 }
