@@ -5,7 +5,7 @@ in order to run this application please do the following steps.
 
 1. Clone this repo
 ```
-git clone 
+git clone https://github.com/moezif-dev/movie-list.git
 ```
 
 2. navigate to client folder
