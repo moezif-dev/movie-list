@@ -1,0 +1,38 @@
+$media-color-score: #6b6b6b;
+$media-color-userrating:  #136CB2;
+
+.rating-widget {
+  .rating-cell {
+    display: inline-block;
+    height: 60px;
+    padding: 10px 20px 5px 20px;
+    margin: 0 5px;
+  }
+  .media-rating-value {
+    font-size: 35px;
+    vertical-align: bottom;
+  }
+  .media-rating-score{
+    font-size: 14px;
+    vertical-align: super;
+    color: $media-color-score;
+  }
+  .user-rating {
+    color: #fff;
+    border-left: 1px solid $media-color-score;
+    cursor: pointer;
+    &:hover {
+      background-color: $media-color-userrating;
+      border-color: #fff;
+    }
+  }
+  .submit-rating{
+    font-size: 14px;
+    display: inline-block;
+    width: 45px;
+    text-align: left;
+    line-height: 1;
+    vertical-align: super;
+    margin-left: 5px;
+  }
+}
