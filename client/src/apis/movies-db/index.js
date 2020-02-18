@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { cachingGet } from '../../utils';
 
 class MovieDBAPI {
   constructor(api_key) {
@@ -7,6 +8,9 @@ class MovieDBAPI {
       baseURL: 'http://www.omdbapi.com/',
     });
     
+    // cache get requests
+    this.http.get = cachingGet(this.http.get);
+
     // intercept api omdbapi requests, and add api key param
     this.http.interceptors.request.use( (httpConfig) => {
         httpConfig.params = { apikey: this.api_key, ...(httpConfig.params || {}) }

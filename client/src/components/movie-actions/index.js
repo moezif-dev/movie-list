@@ -21,7 +21,6 @@ const MovieActions = ( {id: contentId} ) => {
   const disaptchedDeleteWatched = (contentId) => dispatch(deleteWatched(contentId));
   const dispatchedDeleteContent = (contentId) => dispatch(deleteContent(contentId));
 
-  console.log({allContent, watchedContent});
   const isWatched = watchedContent.find( c => c.imdbID === contentId);
 
   const handleWatchClick = contentId => event => {
@@ -42,7 +41,7 @@ const MovieActions = ( {id: contentId} ) => {
   return (
     <div className="movie-actions button-group small expanded stacked-for-small">
       { isWatched ? 
-        <button className="button success" onClick={handleWatchClick(contentId)}><i className="fas fa-eye"></i>Watched</button> :
+        <button className="button success " onClick={handleWatchClick(contentId)}><i className="fas fa-eye"></i>Watched</button> :
         <button className="button warning" onClick={handleWatchClick(contentId)}><i className="fas fa-eye-slash"></i>Watch</button>
       }
       <button className="button alert" onClick={handleContentRemove(contentId)}>Remove</button>
