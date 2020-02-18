@@ -1,5 +1,5 @@
 # movie-list
-my-movie-list is a React application I built to fresh up my skills in building react applications. It consists of a UI where users can search and find there next movie, series, or episode to watch.
+my-movie-list is a React application I built to fresh up my skills in building react applications.
  
 The main functional piece of the UI is a Search Input where users can search by multiple parameters to find
 information about desired digital content.
