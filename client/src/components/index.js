@@ -1,5 +1,6 @@
 import AddContentButton from './add-content-button';
 import Alert from './alert';
+import MovieActions from './movie-actions';
 import MovieCard from './movie-card';
 import MovieList from './movie-list';
 import NavigationBar from './navigation-bar';
@@ -11,6 +12,7 @@ import SearchResults from './search-results';
 export {
   AddContentButton,
   Alert,
+  MovieActions,
   MovieCard,
   MovieList, 
   NavigationBar,

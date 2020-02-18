@@ -1,10 +1,10 @@
 import React from 'react';
-import { MovieCard } from '../';
+import { MovieActions, MovieCard } from '../';
 
-const MovieList = ({ movies, col }) => {
+const MovieList = ({ movies, col, showActions = false }) => {
   return (
     <div className="movies-list grid-container">
-      <div className={`grid-x grid-margin-x small-up-2 medium-up-${col}`}>
+      <div className={`grid-x grid-margin-x small-2 medium-up-${col}`}>
         { movies.map( (movie, index) => {
             return (
               <div key={`${movie.imdbID}-${index}`} className="cell">
@@ -14,6 +14,7 @@ const MovieList = ({ movies, col }) => {
                     title={movie.Title}
                     year={movie.Year}
                   />
+                  { showActions && <MovieActions id={movie.imdbID} />}
               </div>
             )
           })
