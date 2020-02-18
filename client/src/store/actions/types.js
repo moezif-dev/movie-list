@@ -1,2 +1,4 @@
 export const ADD_CONTENT = 'ADD_CONTENT';
 export const DELETE_CONTENT = 'DELETE_CONTENT';
+export const ADD_WATCHED = 'ADD_WATCHED';
+export const DELETE_WATCHED = 'DELETE_WATCHED';
