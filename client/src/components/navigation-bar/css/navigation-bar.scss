@@ -1,0 +1,16 @@
+@import '../../../foundation/app.scss';
+
+.navigation-bar {
+  .menu {
+    .menu-text{
+      color: $black;
+    }
+    .menu-link {
+          color: $black;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

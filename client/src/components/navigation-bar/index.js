@@ -1,6 +1,7 @@
 import React from 'react';
-
 import { Link } from "react-router-dom";
+
+import './css/navigation-bar.scss';
 
 const NAVIGATION_LINKS = [{
   name: "Search",
@@ -12,7 +13,7 @@ const NAVIGATION_LINKS = [{
 
 const NavigationBar = () => {
   return (
-    <div id="navigation-bar">
+    <div className="navigation-bar">
       <div className="top-bar">
         <div className="top-bar-left">
           <ul className="menu">
@@ -20,7 +21,7 @@ const NavigationBar = () => {
             { NAVIGATION_LINKS.map( item => {
               return (
                 <li key={`${item.name}/${item.link}`}>
-                  <Link to={item.link}>{item.name}</Link>
+                  <Link className="menu-link" to={item.link}>{item.name}</Link>
                 </li>
               )
             })}
