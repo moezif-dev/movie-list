@@ -43,7 +43,7 @@ const MovieActions = ( {id: contentId} ) => {
     <div className="movie-actions button-group small expanded stacked-for-small">
       { isWatched ? 
         <button className="button success" onClick={handleWatchClick(contentId)}><i className="fas fa-eye"></i>Watched</button> :
-        <button className="button" onClick={handleWatchClick(contentId)}><i className="fas fa-eye-slash"></i>Watch</button>
+        <button className="button warning" onClick={handleWatchClick(contentId)}><i className="fas fa-eye-slash"></i>Watch</button>
       }
       <button className="button alert" onClick={handleContentRemove(contentId)}>Remove</button>
     </div>

@@ -26,7 +26,7 @@ const AddContentButton = (props) => {
 
   return (
     <button 
-      className="add-content button primary"
+      className="add-content button primary small"
       onClick={ clickHandler(media) }
     >
       { isContent ? 
