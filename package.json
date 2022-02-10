@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/moezif-dev/movie-list#readme",
   "dependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   }
 }
